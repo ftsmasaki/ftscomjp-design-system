@@ -1,0 +1,12 @@
+services:
+  astro:
+    container_name: astro
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - 3000:3000
+    stdin_open: true
+    tty: true
