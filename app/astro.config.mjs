@@ -3,11 +3,11 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://ftsmasaki.github.io",
+  base: "/ftscomjp-design-system",
   integrations: [
     starlight({
       title: "Ftscomjp Design System",
-      site: "https://ftsmasaki.github.io",
-      base: "/ftscomjp-design-system",
       social: {
         github: "https://github.com/withastro/starlight",
       },
