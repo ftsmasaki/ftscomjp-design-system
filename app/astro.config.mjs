@@ -5,7 +5,9 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "Ftscomjp Design System",
+      site: "https://ftsmasaki.github.io",
+      base: "/ftscomjp-design-system",
       social: {
         github: "https://github.com/withastro/starlight",
       },
