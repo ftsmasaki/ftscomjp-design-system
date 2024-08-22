@@ -1,0 +1,17 @@
+{
+  "name": "ftscomjp-design-system",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 3000",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.14.4",
+    "@astrojs/check": "^0.9.3",
+    "typescript": "^5.5.4"
+  }
+}
