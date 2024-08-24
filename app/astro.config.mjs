@@ -34,4 +34,11 @@ export default defineConfig({
     }),
     relativeLinks(),
   ],
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+      },
+    },
+  },
 });
