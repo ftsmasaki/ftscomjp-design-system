@@ -5,29 +5,29 @@ import relativeLinks from "astro-relative-links";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://ftsmasaki.github.io",
-  base: "/",
   integrations: [
     starlight({
       title: "Ftscomjp Design System",
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/ftsmasaki/ftscomjp-design-system",
       },
       sidebar: [
         {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            {
-              label: "Example Guide",
-              slug: "guides/example",
-            },
-          ],
+          label: "はじめに",
+          autogenerate: {
+            directory: "introduction",
+          },
         },
         {
-          label: "Reference",
+          label: "基本要素",
           autogenerate: {
-            directory: "reference",
+            directory: "basics",
+          },
+        },
+        {
+          label: "デザイントークン",
+          autogenerate: {
+            directory: "design_token",
           },
         },
       ],
