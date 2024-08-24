@@ -7,6 +7,12 @@ import relativeLinks from "astro-relative-links";
 export default defineConfig({
   integrations: [
     starlight({
+      locales: {
+        root: {
+          label: "日本語",
+          lang: "ja",
+        },
+      },
       title: "Ftscomjp Design System",
       social: {
         github: "https://github.com/ftsmasaki/ftscomjp-design-system",
